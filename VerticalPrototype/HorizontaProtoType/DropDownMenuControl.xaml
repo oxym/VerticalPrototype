@@ -10,7 +10,7 @@
         <Menu>
             <MenuItem Header="Main Feed" Height="40" Width="75" FontWeight="Bold" FontFamily="Georgia" Background="#FFE8BD5F" Foreground="White" Cursor="Hand" Padding="9,0,6,0" FontSize="10"/>
             <MenuItem Header="View Matches" Height="40" Width="75" FontFamily="Georgia" FontWeight="Bold" Background="#FFE64646" Foreground="White" Cursor="Hand" FontSize="10" Padding="1,0,6,0" Margin="0"/>
-            <MenuItem Header="Fun Test" Height="40" Width="75" FontSize="10" FontFamily="Georgia" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Padding="14,0,0,0"/>
+            <MenuItem x:Name="QuizButton" Header="Fun Test" Height="40" Width="75" FontSize="10" FontFamily="Georgia" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Padding="14,0,0,0"/>
             <MenuItem Header="Logout" Height="40" Width="75" FontFamily="Georgia" FontSize="10" FontWeight="Bold" Background="#FFE8BD5F" Foreground="White" Cursor="Hand" Margin="0" Padding="20,0,6,0"/>
             <MenuItem Header="Back" Height="40" Width="75" FontSize="10" FontFamily="Georgia" FontWeight="Bold" Background="#FFE64646" Foreground="White" Cursor="Hand" Padding="26,0,6,0"/>
         </Menu>

@@ -61,8 +61,31 @@ namespace HorizontalPrototype
 
             //Quiz button clicked, start quiz
             this.Quiz1Button.Click += UponQuizButtonClicked;
+
+            //Edit profile save button clicked
+            this.SaveButton.Click += UponSaveButtonClicked;
+
+            //Quiz button in the menu clicked
+            this.DropDownMenu.QuizButton.Click += UponMenuQuizButtonClicked;
        
 
+        }
+
+        private void UponMenuQuizButtonClicked(object sender, RoutedEventArgs e)
+        {
+            this.LoginScreenCanvas.Visibility = Visibility.Hidden;
+            this.SignupScreenCanvas.Visibility = Visibility.Hidden;
+            this.EditScreenViewer.Visibility = Visibility.Hidden;
+            this.DropDownMenu.Visibility = Visibility.Hidden;
+            this.ProfileScreenCanvas.Visibility = Visibility.Hidden;
+            this.QuizMainScreenCanvas.Visibility = Visibility.Visible;
+            this.QuizQuestionCanvas.Visibility = Visibility.Hidden;
+            this.MatchScreenCanvas.Visibility = Visibility.Hidden;
+        }
+
+        private void UponSaveButtonClicked(object sender, RoutedEventArgs e)
+        {
+            this.ProfileScreenCanvas.Visibility = Visibility.Visible;
         }
 
         private void UponQuizButtonClicked(object sender, RoutedEventArgs e)
